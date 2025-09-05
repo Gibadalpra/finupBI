@@ -1,0 +1,152 @@
+# Product Requirements Document (PRD) – Finup_BI
+
+## 1. Visão Geral do Produto
+
+### 1.1 Descrição
+
+O Finup_BI é uma plataforma de gestão orçamentária e controladoria desenvolvida especificamente para os clientes da Finup Consultoria.
+
+O projeto visa apoiar os processos de gestão por indicadores e controladoria (planejado e realizado) usando dados dos sistemas dos clientes, padronizando a gestão de indicadores através da aplicação inteligente de automação e análise de dados.
+
+### 1.2 Objetivos do MVP
+
+- Automatizar o processo de ETL (Extração, Transformação e Carga)
+- Padronizar dados financeiros
+- Permitir personalização do plano de contas por cliente
+- Visualizar o desempenho financeiro através de dashboards
+
+### 1.3 Diferencial Competitivo
+
+- Especialização em BI
+- Tratamento de dados inconsistentes com lógica especializada
+- Uso de automações e Inteligência Artificial
+- Correção e padronização automática com uploads tratados e adaptados
+
+## 2. Funcionalidades do MVP
+
+### 2.1 Gestão de Clientes e Usuários
+- CRUD de Clientes (Pessoas Jurídicas clientes da plataforma)
+- CRUD de usuários externos (dos clientes)
+- CRUD de usuários internos (consultores)
+- Sistema de autenticação e autorização
+- Diferentes níveis de acesso (super_admin, admin_cliente, usuário_interno e usuário externo)
+
+### 2.2 Personalização do Plano de Contas
+- CRUD de Grupos, Sub-Grupos e Contas
+- Estrutura hierárquica de contas
+- Grupos cadastrados como tipo de comportamento
+- Cadastro de Centros de Custo
+- Personalização por cliente
+- Função de relacionamento (De/PARA) do Plano de Contas original para o personalizado do cliente;
+- Função de relacionamento (De/PARA) do Centro de Custo original para o personalizado do cliente;
+
+
+
+### 2.3 Importação de Planilhas
+- Importação de planilhas padrão de dados realizados
+- Importação de planilhas de dados planejados
+- Download de modelos pré-formatados
+- Validação e tratamento de dados
+
+#### 2.3.1 Planilha-Modelo 1: Importação de Realizado
+
+Colunas da planilha de Importação do Realizado 
+
+ - Data Emissão,
+ - Data Vencimento,
+ - Data Pagamento,
+ - Pessoa, - Plano de Contas Original,
+- Plano de Contas Revisado,
+- Valor Previsto,
+- Valor Efetivo,
+- Parcela,
+- Total Parcelas,
+- Conta Bancária,
+- Descrição,
+- Centro de Resultado
+(adicionar campos de auditoria)
+
+#### 2.3.2 Planilha-Modelo 2: Importação de Planejado
+Colunas da planilha de Importação do Realizado:
+
+Nome do Planejamento,
+Centro de Custo,
+Mês Referência,
+Conta
+Valor Planejado
+
+### 2.4 Cálculo de Medidas Financeiras
+- Receita de Vendas
+- Receita Líquida
+- Margem de Contribuição
+- Resultado Operacional antes dos Investimentos
+- Resultado Operacional
+- Geração de Caixa
+
+
+### 2.5 Dashboards
+- Dashboard Realizado
+- Dashboard Planejado
+- Dashboard Planejado x Realizado
+- Dashboard Análises Financeiras
+
+## 3. Regras de Negócio
+
+### 3.1 Tratamento de Valores
+- Normalização de sinais: despesas sempre positivas
+
+- Auditoria de dados com duas colunas de valor:
+  - Valor Original: como recebido da base de dados
+  - Valor Tratado: normalizado para cálculos
+
+### 3.2 Segurança
+- Autenticação JWT
+- Validação de entrada de dados
+- Rate limiting
+- Políticas CORS adequadas
+- Criptografia de dados sensíveis
+
+## 4. Arquitetura Técnica
+
+### 4.1 Frontend
+- React 18.2.0 com Vite 5.0.0
+- Tailwind CSS para estilização
+- Redux para gerenciamento de estado
+- React Router para navegação
+- Recharts e D3 para visualização de dados
+- React Hook Form para formulários
+- Framer Motion para animações
+
+### 4.2 Backend
+
+- FastAPI como framework principal
+- Python como linguagem de back-end e tratamento de dados
+- Poetry para padronização de bobliotecas
+- PostgreSQL como banco de dados
+- Redis para cache e sessões
+- SQLAlchemy como ORM
+- Pydantic para validação
+- JWT para autenticação
+
+### 4.3 Infraestrutura
+- Docker para containerização
+- Variáveis de ambiente para configurações
+
+## 5. Critérios de Sucesso
+
+- Interface responsiva e intuitiva
+- Performance adequada para volumes de dados esperados
+- Segurança implementada conforme melhores práticas
+- Testes automatizados cobrindo funcionalidades críticas
+
+## 6. Módulos Futuros
+- Inadimplência
+- Vendas
+- Compras e Estoque
+- Produtos
+
+## 7. Restrições e Limitações
+- Prazo de 21 dias para MVP
+- Foco inicial apenas no módulo financeiro
+- Integração com sistemas externos será implementada após o piloto
+- Inicialmente baseado em importação de planilhas padrão

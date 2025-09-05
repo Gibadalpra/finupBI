@@ -1,0 +1,1067 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Página Home - Hub Central Implementada",
+        "description": "Criação da página home como tela inicial após login com navegação para módulos do sistema",
+        "details": "Implementada página home (/src/pages/home/index.jsx) que serve como hub central da aplicação. Inclui 4 cards visuais para os módulos: Financeiro (disponível), Vendas, Compras e Estoque (em breve). Design responsivo com gradientes, animações hover e informações detalhadas sobre cada módulo.",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [],
+        "testStrategy": "Verificar navegação, responsividade e integração com sistema de rotas",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Estrutura base da página",
+            "description": "Criação do componente React com Header e Sidebar",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 2,
+            "title": "Grid de módulos",
+            "description": "Implementação dos 4 cards dos módulos com design responsivo",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 3,
+            "title": "Sistema de navegação",
+            "description": "Integração com React Router e lógica de navegação",
+            "status": "done",
+            "dependencies": []
+          },
+          {
+            "id": 4,
+            "title": "Atualização de rotas",
+            "description": "Configuração da rota padrão (/) para a página home",
+            "status": "done",
+            "dependencies": []
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Melhorias de UX na Página Home",
+        "description": "Implementar melhorias de experiência do usuário na página home",
+        "details": "Adicionar animações de loading, melhorar responsividade mobile, implementar feedback visual para ações do usuário e otimizar performance.",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "1"
+        ],
+        "testStrategy": "Testes de usabilidade em diferentes dispositivos e navegadores"
+      },
+      {
+        "id": 3,
+        "title": "Sistema de Notificações",
+        "description": "Implementar sistema de notificações para feedback do usuário",
+        "details": "Criar componente de notificações toast/snackbar para informar sobre ações, erros e sucessos. Integrar com todas as páginas da aplicação.",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "1"
+        ],
+        "testStrategy": "Testar diferentes tipos de notificações e posicionamento"
+      },
+      {
+        "id": 4,
+        "title": "Módulo de Vendas - Planejamento",
+        "description": "Planejar e projetar a estrutura do módulo de vendas",
+        "details": "Definir arquitetura, componentes, páginas e fluxos do módulo de vendas. Incluir pipeline de vendas, gestão de clientes, propostas e relatórios.",
+        "status": "done",
+        "priority": "low",
+        "dependencies": [
+          "1"
+        ],
+        "testStrategy": "Validação de requisitos com stakeholders"
+      },
+      {
+        "id": 5,
+        "title": "Módulo de Compras - Planejamento",
+        "description": "Planejar e projetar a estrutura do módulo de compras",
+        "details": "Definir arquitetura, componentes, páginas e fluxos do módulo de compras. Incluir gestão de fornecedores, pedidos de compra e relatórios.",
+        "status": "pending",
+        "priority": "low",
+        "dependencies": [
+          "1"
+        ],
+        "testStrategy": "Validação de requisitos com stakeholders"
+      },
+      {
+        "id": 6,
+        "title": "Módulo de Estoque - Planejamento",
+        "description": "Planejar e projetar a estrutura do módulo de estoque",
+        "details": "Definir arquitetura, componentes, páginas e fluxos do módulo de estoque. Incluir controle de inventário, movimentações e alertas.",
+        "status": "pending",
+        "priority": "low",
+        "dependencies": [
+          "1"
+        ],
+        "testStrategy": "Validação de requisitos com stakeholders"
+      },
+      {
+        "id": 7,
+        "title": "Testes Unitários - Página Home",
+        "description": "Implementar testes unitários para a página home",
+        "details": "Criar testes para componentes, navegação, responsividade e interações do usuário na página home.",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [
+          "1"
+        ],
+        "testStrategy": "Cobertura de testes > 80% para componentes críticos"
+      },
+      {
+        "id": 8,
+        "title": "Documentação Técnica",
+        "description": "Criar documentação técnica completa do projeto",
+        "details": "Documentar arquitetura, componentes, padrões de código, guias de contribuição e deployment.",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [
+          "1"
+        ],
+        "testStrategy": "Revisão por pares e validação com equipe"
+      },
+      {
+        "id": 9,
+        "title": "Página de Importação de Planejamento",
+        "description": "Implementar página completa de importação de dados de planejamento financeiro",
+        "details": "Criar página com upload de arquivos XLS/CSV, preview dos dados, validação de layout, histórico de importações e sistema de logs. Incluir seletor de cliente, componentes de upload, preview, histórico e modal de processamento.",
+        "testStrategy": "Testar upload de arquivos, validação de dados, preview e histórico",
+        "status": "done",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Estrutura base da página implementada",
+            "description": "Criar componente principal com Header, Sidebar e layout responsivo",
+            "details": "Implementar a estrutura básica da página com navegação e layout",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 9
+          },
+          {
+            "id": 2,
+            "title": "Componentes de upload e preview implementados",
+            "description": "Criar FileUploadPanel e DataPreviewPanel com validação",
+            "details": "Implementar componentes para upload de arquivos XLS/CSV e preview dos dados com validação de layout",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 9
+          },
+          {
+            "id": 3,
+            "title": "Histórico e logs implementados",
+            "description": "Criar ImportHistoryPanel e sistema de logs de importação",
+            "details": "Implementar painel de histórico com filtros, busca e sistema completo de logs de erros e sucessos",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 9
+          },
+          {
+            "id": 4,
+            "title": "Modal de processamento e resumo implementados",
+            "description": "Criar ProcessingModal e ImportSummary com estatísticas",
+            "details": "Implementar modal de processamento com progresso em tempo real e componente de resumo com estatísticas de importação",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 9
+          },
+          {
+            "id": 5,
+            "title": "Integração no sistema implementada",
+            "description": "Adicionar rota e integração no menu lateral",
+            "details": "Configurar rota /planned-import no sistema de rotas e adicionar item no menu lateral para acesso à página",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 9
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Página de Mapeamento DE/PARA de Contas",
+        "description": "Criar página completa de mapeamento DE/PARA de contas contábeis",
+        "details": "Implementar página que permite usuários internos selecionarem cliente, visualizarem contas importadas e plano de contas, e fazerem mapeamento entre eles",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Estrutura base da página implementada",
+            "description": "Criar componente principal com Header, Sidebar e layout responsivo para mapeamento",
+            "details": "Página já criada em /pages/account-mapping com estrutura básica",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 10
+          },
+          {
+            "id": 2,
+            "title": "Seletor de cliente implementado",
+            "description": "Implementar dropdown de seleção de cliente para usuários internos",
+            "details": "ClientSelector já implementado com busca e integração",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 10
+          },
+          {
+            "id": 3,
+            "title": "Painel de contas importadas implementado",
+            "description": "Criar painel que exibe contas importadas com busca e filtros",
+            "details": "ImportedAccountsPanel já implementado com integração ao cliente selecionado",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 10
+          },
+          {
+            "id": 4,
+            "title": "Painel do Plano de Contas",
+            "description": "Criar painel que exibe o plano de contas cadastrado com hierarquia",
+            "details": "ChartOfAccountsPanel já implementado com integração ao cliente selecionado",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 10
+          },
+          {
+            "id": 5,
+            "title": "Sistema de mapeamento DE/PARA",
+            "description": "Implementar funcionalidade de mapeamento entre contas importadas e plano de contas",
+            "details": "Precisa implementar drag-and-drop ou sistema de seleção para fazer o mapeamento",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 10
+          },
+          {
+            "id": 6,
+            "title": "Painel de sugestões automáticas",
+            "description": "Implementar painel com sugestões de mapeamento baseadas em IA",
+            "details": "MappingSuggestionsPanel já implementado com lógica de sugestões",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 10
+          },
+          {
+            "id": 7,
+            "title": "Resumo do progresso de mapeamento",
+            "description": "Implementar componente que mostra estatísticas e progresso do mapeamento",
+            "details": "MappingProgressSummary já implementado com métricas e estatísticas",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 10
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "title": "FASE 1: Configuração do Ambiente Backend (Dias 1-3)",
+        "description": "Configurar infraestrutura Supabase + Vercel para o MVP",
+        "details": "Configurar projeto Supabase, variáveis de ambiente, autenticação básica e deploy inicial no Vercel. Base para todo desenvolvimento backend.",
+        "status": "pending",
+        "priority": "critical",
+        "dependencies": [],
+        "testStrategy": "Verificar conexão Supabase, autenticação e deploy Vercel",
+        "estimatedDays": 3,
+        "phase": "infrastructure",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Configurar projeto Supabase",
+            "description": "Criar projeto, configurar banco de dados e obter credenciais",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 11
+          },
+          {
+            "id": 2,
+            "title": "Configurar variáveis de ambiente",
+            "description": "Configurar .env com SUPABASE_URL, SUPABASE_ANON_KEY e SERVICE_ROLE",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 11
+          },
+          {
+            "id": 3,
+            "title": "Configurar autenticação Supabase",
+            "description": "Implementar Auth básico sem 2FA conforme especificação",
+            "status": "pending",
+            "dependencies": [2],
+            "parentTaskId": 11
+          },
+          {
+            "id": 4,
+            "title": "Deploy inicial Vercel",
+            "description": "Configurar vercel.json e fazer primeiro deploy",
+            "status": "pending",
+            "dependencies": [3],
+            "parentTaskId": 11
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "title": "FASE 2: Estrutura de Banco de Dados (Dias 4-6)",
+        "description": "Criar tabelas e RLS para isolamento lógico dos dados",
+        "details": "Implementar modelo de dados com isolamento lógico via RLS, tabelas de clientes, usuários, plano de contas e dados financeiros. Volume: 1.000-10.000 linhas.",
+        "status": "pending",
+        "priority": "critical",
+        "dependencies": [11],
+        "testStrategy": "Verificar RLS, inserção de dados e consultas por cliente",
+        "estimatedDays": 3,
+        "phase": "database",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Criar tabela de clientes",
+            "description": "Tabela clients com campos básicos e RLS",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 12
+          },
+          {
+            "id": 2,
+            "title": "Criar tabela de usuários",
+            "description": "Tabela users vinculada ao Auth do Supabase com client_id",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 12
+          },
+          {
+            "id": 3,
+            "title": "Criar tabela plano de contas",
+            "description": "Tabela chart_of_accounts com hierarquia e RLS por cliente",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 12
+          },
+          {
+            "id": 4,
+            "title": "Criar tabelas de dados financeiros",
+            "description": "Tabelas financial_data e imported_data com RLS",
+            "status": "pending",
+            "dependencies": [2, 3],
+            "parentTaskId": 12
+          },
+          {
+            "id": 5,
+            "title": "Configurar políticas RLS",
+            "description": "Implementar Row Level Security para isolamento por cliente",
+            "status": "pending",
+            "dependencies": [4],
+            "parentTaskId": 12
+          },
+          {
+            "id": 6,
+            "title": "Configurar backup diário",
+            "description": "Ativar backup automático diário no Supabase",
+            "status": "pending",
+            "dependencies": [5],
+            "parentTaskId": 12
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "title": "FASE 3: APIs Backend Essenciais (Dias 7-10)",
+        "description": "Desenvolver APIs para funcionalidades críticas do MVP",
+        "details": "Implementar APIs para gestão de clientes, autenticação, upload de dados e consultas básicas. Foco nas funcionalidades prioritárias.",
+        "status": "pending",
+        "priority": "critical",
+        "dependencies": [12],
+        "testStrategy": "Testes de API com curl, validação de dados e performance",
+        "estimatedDays": 4,
+        "phase": "backend",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "API de gestão de clientes",
+            "description": "CRUD completo para clientes (admin cria usuários)",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 13
+          },
+          {
+            "id": 2,
+            "title": "API de autenticação",
+            "description": "Login/logout integrado com Supabase Auth",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 13
+          },
+          {
+            "id": 3,
+            "title": "API de upload de dados",
+            "description": "Endpoint para importação de arquivos XLS/CSV < 1000 linhas",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 13
+          },
+          {
+            "id": 4,
+            "title": "API de plano de contas",
+            "description": "CRUD para plano de contas com hierarquia",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 13
+          },
+          {
+            "id": 5,
+            "title": "API de consulta de dados",
+            "description": "Endpoints para consultar dados financeiros com filtros",
+            "status": "pending",
+            "dependencies": [3, 4],
+            "parentTaskId": 13
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "title": "FASE 4: Integração Frontend-Backend (Dias 11-13)",
+        "description": "Conectar frontend existente com APIs do backend",
+        "details": "Substituir dados mockados por chamadas reais às APIs, implementar gerenciamento de estado e tratamento de erros.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [13],
+        "testStrategy": "Testes de integração, fluxos completos e tratamento de erros",
+        "estimatedDays": 3,
+        "phase": "integration",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Configurar cliente HTTP",
+            "description": "Configurar Axios/Fetch com interceptors e tratamento de erros",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 14
+          },
+          {
+            "id": 2,
+            "title": "Integrar autenticação",
+            "description": "Conectar login/logout com Supabase Auth",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 14
+          },
+          {
+            "id": 3,
+            "title": "Integrar gestão de clientes",
+            "description": "Conectar páginas de cliente com APIs backend",
+            "status": "pending",
+            "dependencies": [2],
+            "parentTaskId": 14
+          },
+          {
+            "id": 4,
+            "title": "Integrar upload de dados",
+            "description": "Conectar página de importação com API de upload",
+            "status": "pending",
+            "dependencies": [3],
+            "parentTaskId": 14
+          },
+          {
+            "id": 5,
+            "title": "Integrar consultas de dados",
+            "description": "Conectar dashboards e relatórios com APIs de consulta",
+            "status": "pending",
+            "dependencies": [4],
+            "parentTaskId": 14
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "title": "FUNCIONALIDADE CRÍTICA: Cadastro Cliente/Usuário (Dias 14-15)",
+        "description": "Implementar funcionalidade prioritária de cadastro",
+        "details": "Desenvolver fluxo completo de cadastro de clientes e usuários, com admin criando usuários conforme especificação.",
+        "status": "pending",
+        "priority": "critical",
+        "dependencies": [14],
+        "testStrategy": "Testes de fluxo completo, validações e permissões",
+        "estimatedDays": 2,
+        "phase": "features",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Página de cadastro de cliente",
+            "description": "Interface para admin cadastrar novos clientes",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 15
+          },
+          {
+            "id": 2,
+            "title": "Página de cadastro de usuário",
+            "description": "Interface para admin criar usuários vinculados a clientes",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 15
+          },
+          {
+            "id": 3,
+            "title": "Validações e permissões",
+            "description": "Implementar validações de dados e controle de acesso",
+            "status": "pending",
+            "dependencies": [2],
+            "parentTaskId": 15
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "title": "FUNCIONALIDADE CRÍTICA: Upload de Dados (Dias 16-17)",
+        "description": "Implementar funcionalidade prioritária de upload",
+        "details": "Desenvolver sistema completo de upload de arquivos XLS/CSV com validação, preview e processamento < 1000 linhas semanais.",
+        "status": "pending",
+        "priority": "critical",
+        "dependencies": [15],
+        "testStrategy": "Testes com diferentes formatos, validação de limites e performance",
+        "estimatedDays": 2,
+        "phase": "features",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Validação de arquivos",
+            "description": "Implementar validação de formato, tamanho e estrutura",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 16
+          },
+          {
+            "id": 2,
+            "title": "Preview de dados",
+            "description": "Mostrar preview dos dados antes do processamento",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 16
+          },
+          {
+            "id": 3,
+            "title": "Processamento e armazenamento",
+            "description": "Processar e armazenar dados com isolamento por cliente",
+            "status": "pending",
+            "dependencies": [2],
+            "parentTaskId": 16
+          },
+          {
+            "id": 4,
+            "title": "Controle de limite semanal",
+            "description": "Implementar controle de < 1000 linhas por semana",
+            "status": "pending",
+            "dependencies": [3],
+            "parentTaskId": 16
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "title": "FUNCIONALIDADE CRÍTICA: DFC Realizado (Dias 18-19)",
+        "description": "Implementar funcionalidade prioritária de DFC",
+        "details": "Desenvolver relatório de Demonstração de Fluxo de Caixa Realizado com dados importados e exportação PDF.",
+        "status": "pending",
+        "priority": "critical",
+        "dependencies": [16],
+        "testStrategy": "Validar cálculos, layout do relatório e geração de PDF",
+        "estimatedDays": 2,
+        "phase": "features",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Lógica de cálculo DFC",
+            "description": "Implementar algoritmos de cálculo do fluxo de caixa",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 17
+          },
+          {
+            "id": 2,
+            "title": "Interface do relatório",
+            "description": "Criar interface para visualização do DFC",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 17
+          },
+          {
+            "id": 3,
+            "title": "Exportação PDF",
+            "description": "Implementar geração de PDF do relatório",
+            "status": "pending",
+            "dependencies": [2],
+            "parentTaskId": 17
+          },
+          {
+            "id": 4,
+            "title": "Filtros e períodos",
+            "description": "Adicionar filtros por período e outras opções",
+            "status": "pending",
+            "dependencies": [3],
+            "parentTaskId": 17
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "title": "FASE 5: Compliance e Segurança LGPD (Dia 20)",
+        "description": "Implementar requisitos de compliance LGPD",
+        "details": "Adicionar políticas de privacidade, termos de uso, controles de consentimento e auditoria conforme LGPD.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [17],
+        "testStrategy": "Verificar políticas, logs de auditoria e controles de privacidade",
+        "estimatedDays": 1,
+        "phase": "compliance",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Política de privacidade",
+            "description": "Criar página com política de privacidade LGPD",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 18
+          },
+          {
+            "id": 2,
+            "title": "Termos de uso",
+            "description": "Criar página com termos de uso",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 18
+          },
+          {
+            "id": 3,
+            "title": "Controles de consentimento",
+            "description": "Implementar checkboxes e controles de consentimento",
+            "status": "pending",
+            "dependencies": [1, 2],
+            "parentTaskId": 18
+          },
+          {
+            "id": 4,
+            "title": "Log de auditoria",
+            "description": "Implementar logs de acesso e modificação de dados",
+            "status": "pending",
+            "dependencies": [3],
+            "parentTaskId": 18
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "title": "FASE 6: Testes e Deploy Final (Dia 21)",
+        "description": "Testes finais e deploy de produção",
+        "details": "Executar testes de integração, performance, deploy final no domínio www.app.finup.com.br e validação completa do MVP.",
+        "status": "pending",
+        "priority": "critical",
+        "dependencies": [18],
+        "testStrategy": "Testes end-to-end, performance, segurança e aceitação",
+        "estimatedDays": 1,
+        "phase": "deployment",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Testes de integração",
+            "description": "Executar testes completos de todos os fluxos",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 19
+          },
+          {
+            "id": 2,
+            "title": "Testes de performance",
+            "description": "Validar tempo de resposta < 3s e volume de dados",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 19
+          },
+          {
+            "id": 3,
+            "title": "Configurar domínio",
+            "description": "Configurar www.app.finup.com.br no Vercel",
+            "status": "pending",
+            "dependencies": [2],
+            "parentTaskId": 19
+          },
+          {
+            "id": 4,
+            "title": "Deploy de produção",
+            "description": "Deploy final com todas as funcionalidades",
+            "status": "pending",
+            "dependencies": [3],
+            "parentTaskId": 19
+          },
+          {
+            "id": 5,
+            "title": "Validação final MVP",
+            "description": "Checklist completo de funcionalidades e requisitos",
+            "status": "pending",
+            "dependencies": [4],
+            "parentTaskId": 19
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "title": "DOCUMENTAÇÃO: Guias para Equipe Júnior",
+        "description": "Criar documentação detalhada para equipe júnior",
+        "details": "Desenvolver guias passo-a-passo, documentação de APIs, troubleshooting e manuais de operação para facilitar o trabalho da equipe júnior.",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [19],
+        "testStrategy": "Revisão por pares e validação com equipe",
+        "estimatedDays": "paralelo",
+        "phase": "documentation",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Guia de setup do ambiente",
+            "description": "Documentar passo-a-passo para configurar ambiente local",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 20
+          },
+          {
+            "id": 2,
+            "title": "Documentação de APIs",
+            "description": "Documentar todas as APIs com exemplos e códigos",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 20
+          },
+          {
+            "id": 3,
+            "title": "Guia de troubleshooting",
+            "description": "Documentar problemas comuns e soluções",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 20
+          },
+          {
+            "id": 4,
+            "title": "Manual de operação",
+            "description": "Documentar procedimentos de deploy e manutenção",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 20
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "title": "FUNCIONALIDADES FUTURAS: Planejamento Pós-MVP",
+        "description": "Planejar funcionalidades para versões futuras",
+        "details": "Documentar roadmap para funcionalidades importantes como relatórios agendados, dashboards avançados, integrações bancárias e módulos adicionais.",
+        "status": "pending",
+        "priority": "low",
+        "dependencies": [20],
+        "testStrategy": "Validação de requisitos com stakeholders",
+        "estimatedDays": "futuro",
+        "phase": "planning",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Relatórios agendados",
+            "description": "Planejar sistema de relatórios automáticos por email",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 21
+          },
+          {
+            "id": 2,
+            "title": "Dashboards avançados",
+            "description": "Planejar dashboards interativos com gráficos",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 21
+          },
+          {
+            "id": 3,
+            "title": "Integrações bancárias",
+            "description": "Planejar integração com APIs bancárias",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 21
+          },
+          {
+            "id": 4,
+            "title": "Módulos adicionais",
+            "description": "Planejar módulos de vendas, compras e estoque",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 21
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "title": "MONITORAMENTO: Métricas e Alertas",
+        "description": "Implementar monitoramento básico para o MVP",
+        "details": "Configurar métricas básicas de uso, alertas de erro e monitoramento de performance para garantir SLA de < 4 horas de indisponibilidade.",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [19],
+        "testStrategy": "Verificar alertas, métricas e tempo de resposta",
+        "estimatedDays": "paralelo",
+        "phase": "monitoring",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Métricas básicas",
+            "description": "Configurar métricas de uso e performance no Vercel",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 22
+          },
+          {
+            "id": 2,
+            "title": "Alertas de erro",
+            "description": "Configurar alertas para erros críticos",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 22
+          },
+          {
+            "id": 3,
+            "title": "Monitoramento de uptime",
+            "description": "Configurar monitoramento de disponibilidade",
+            "status": "pending",
+            "dependencies": [2],
+            "parentTaskId": 22
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "title": "ORÇAMENTO: Controle de Custos < $30/mês",
+        "description": "Monitorar e otimizar custos do MVP",
+        "details": "Implementar controles para manter custos abaixo de $30/mês, otimizar uso do Supabase e Vercel, e configurar alertas de billing.",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [19],
+        "testStrategy": "Verificar custos reais vs orçamento planejado",
+        "estimatedDays": "contínuo",
+        "phase": "cost-control",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Configurar alertas de billing",
+            "description": "Configurar alertas no Supabase e Vercel para controle de custos",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 23
+          },
+          {
+            "id": 2,
+            "title": "Otimizar queries",
+            "description": "Otimizar consultas para reduzir uso de recursos",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 23
+          },
+          {
+            "id": 3,
+            "title": "Monitoramento mensal",
+            "description": "Processo de revisão mensal de custos",
+            "status": "pending",
+            "dependencies": [2],
+            "parentTaskId": 23
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "title": "AMBIENTE DE HOMOLOGAÇÃO",
+        "description": "Configurar ambiente de testes separado",
+        "details": "Criar ambiente de homologação no Vercel com banco de dados separado no Supabase para testes antes do deploy de produção.",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [12],
+        "testStrategy": "Validar isolamento entre ambientes e processo de deploy",
+        "estimatedDays": "paralelo",
+        "phase": "infrastructure",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Projeto Supabase de homologação",
+            "description": "Criar projeto separado no Supabase para testes",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 24
+          },
+          {
+            "id": 2,
+            "title": "Deploy de homologação Vercel",
+            "description": "Configurar branch de homologação no Vercel",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 24
+          },
+          {
+            "id": 3,
+            "title": "Pipeline de deploy",
+            "description": "Configurar processo homologação → produção",
+            "status": "pending",
+            "dependencies": [2],
+            "parentTaskId": 24
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "title": "ATUALIZAÇÕES SEMANAIS",
+        "description": "Processo de atualizações e manutenção",
+        "details": "Estabelecer processo de atualizações semanais, incluindo correções, melhorias e novas funcionalidades menores.",
+        "status": "pending",
+        "priority": "low",
+        "dependencies": [19],
+        "testStrategy": "Validar processo de deploy e rollback",
+        "estimatedDays": "contínuo",
+        "phase": "maintenance",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Processo de release",
+            "description": "Definir processo semanal de releases",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 25
+          },
+          {
+            "id": 2,
+            "title": "Checklist de deploy",
+            "description": "Criar checklist para validação antes do deploy",
+            "status": "pending",
+            "dependencies": [1],
+            "parentTaskId": 25
+          },
+          {
+            "id": 3,
+            "title": "Processo de rollback",
+            "description": "Definir processo de rollback em caso de problemas",
+            "status": "pending",
+            "dependencies": [2],
+            "parentTaskId": 25
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "version": "2.0",
+      "created": "2024-12-19",
+      "lastUpdated": "2024-12-19",
+      "totalTasks": 25,
+      "completedTasks": 3,
+      "pendingTasks": 22,
+      "description": "MVP Finup_BI - Planejamento 21 dias",
+      "updated": "2025-01-27T00:00:00.000Z",
+      "mvpDeadline": "2025-02-17",
+      "teamProfile": "júnior",
+      "budget": "< $30/mês"
+    },
+    "summary": {
+      "totalTasks": 25,
+      "completedTasks": 3,
+      "pendingTasks": 22,
+      "inProgressTasks": 0,
+      "criticalTasks": 8,
+      "highPriorityTasks": 4,
+      "mediumPriorityTasks": 6,
+      "lowPriorityTasks": 7,
+      "estimatedCompletionDays": 21,
+      "currentPhase": "infrastructure",
+      "nextMilestone": "FASE 1: Configuração do Ambiente Backend (Dias 1-3)",
+      "phases": {
+        "infrastructure": {
+          "tasks": [11, 24],
+          "description": "Configuração Supabase + Vercel",
+          "estimatedDays": 3
+        },
+        "database": {
+          "tasks": [12],
+          "description": "Estrutura de banco com RLS",
+          "estimatedDays": 3
+        },
+        "backend": {
+          "tasks": [13],
+          "description": "APIs essenciais do MVP",
+          "estimatedDays": 4
+        },
+        "integration": {
+          "tasks": [14],
+          "description": "Integração frontend-backend",
+          "estimatedDays": 3
+        },
+        "features": {
+          "tasks": [15, 16, 17],
+          "description": "Funcionalidades críticas",
+          "estimatedDays": 6
+        },
+        "compliance": {
+          "tasks": [18],
+          "description": "LGPD e segurança",
+          "estimatedDays": 1
+        },
+        "deployment": {
+          "tasks": [19],
+          "description": "Testes e deploy final",
+          "estimatedDays": 1
+        },
+        "documentation": {
+          "tasks": [20],
+          "description": "Guias para equipe júnior",
+          "estimatedDays": "paralelo"
+        },
+        "planning": {
+          "tasks": [21],
+          "description": "Roadmap pós-MVP",
+          "estimatedDays": "futuro"
+        },
+        "monitoring": {
+          "tasks": [22],
+          "description": "Métricas e alertas",
+          "estimatedDays": "paralelo"
+        },
+        "cost-control": {
+          "tasks": [23],
+          "description": "Controle de custos < $30/mês",
+          "estimatedDays": "contínuo"
+        },
+        "maintenance": {
+          "tasks": [25],
+          "description": "Processo de atualizações",
+          "estimatedDays": "contínuo"
+        }
+      },
+      "criticalPath": [11, 12, 13, 14, 15, 16, 17, 18, 19],
+      "riskFactors": [
+        "Complexidade da integração Supabase + Vercel",
+        "Implementação de RLS para isolamento de dados",
+        "Performance com volume de 1.000-10.000 linhas",
+        "Compliance LGPD em prazo apertado",
+        "Equipe júnior com curva de aprendizado",
+        "Controle de custos < $30/mês"
+      ],
+      "keyDependencies": [
+        "Configuração Supabase (base para tudo)",
+        "RLS implementado corretamente",
+        "APIs backend funcionais",
+        "Integração frontend-backend estável",
+        "Funcionalidades críticas: cadastro, upload, DFC"
+      ],
+      "teamConsiderations": {
+        "juniorTeam": true,
+        "documentation": "Guias detalhados necessários",
+        "complexity": "Tarefas quebradas em subtarefas menores",
+        "support": "Troubleshooting e exemplos práticos"
+      },
+      "budgetConstraints": {
+        "maxMonthlyCost": "$30",
+        "monitoring": "Alertas de billing configurados",
+        "optimization": "Queries otimizadas para reduzir custos"
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+# Task ID: 10
+# Title: Página de Mapeamento DE/PARA de Contas
+# Status: pending
+# Dependencies: None
+# Priority: high
+# Description: Criar página completa de mapeamento DE/PARA de contas contábeis
+# Details:
+Implementar página que permite usuários internos selecionarem cliente, visualizarem contas importadas e plano de contas, e fazerem mapeamento entre eles
+
+# Test Strategy:
+
+
+# Subtasks:
+## 1. Estrutura base da página implementada [done]
+### Dependencies: None
+### Description: Criar componente principal com Header, Sidebar e layout responsivo para mapeamento
+### Details:
+Página já criada em /pages/account-mapping com estrutura básica
+
+## 2. Seletor de cliente implementado [done]
+### Dependencies: None
+### Description: Implementar dropdown de seleção de cliente para usuários internos
+### Details:
+ClientSelector já implementado com busca e integração
+
+## 3. Painel de contas importadas implementado [done]
+### Dependencies: None
+### Description: Criar painel que exibe contas importadas com busca e filtros
+### Details:
+ImportedAccountsPanel já implementado com integração ao cliente selecionado
+
+## 4. Painel do Plano de Contas [done]
+### Dependencies: None
+### Description: Criar painel que exibe o plano de contas cadastrado com hierarquia
+### Details:
+ChartOfAccountsPanel já implementado com integração ao cliente selecionado
+
+## 5. Sistema de mapeamento DE/PARA [pending]
+### Dependencies: None
+### Description: Implementar funcionalidade de mapeamento entre contas importadas e plano de contas
+### Details:
+Precisa implementar drag-and-drop ou sistema de seleção para fazer o mapeamento
+
+## 6. Painel de sugestões automáticas [done]
+### Dependencies: None
+### Description: Implementar painel com sugestões de mapeamento baseadas em IA
+### Details:
+MappingSuggestionsPanel já implementado com lógica de sugestões
+
+## 7. Resumo do progresso de mapeamento [done]
+### Dependencies: None
+### Description: Implementar componente que mostra estatísticas e progresso do mapeamento
+### Details:
+MappingProgressSummary já implementado com métricas e estatísticas
+

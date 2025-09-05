@@ -1,0 +1,11 @@
+# Task ID: 3
+# Title: Sistema de Notificações
+# Status: done
+# Dependencies: 1
+# Priority: medium
+# Description: Implementar sistema de notificações para feedback do usuário
+# Details:
+Criar componente de notificações toast/snackbar para informar sobre ações, erros e sucessos. Integrar com todas as páginas da aplicação.
+
+# Test Strategy:
+Testar diferentes tipos de notificações e posicionamento

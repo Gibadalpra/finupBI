@@ -1,0 +1,43 @@
+# Task ID: 9
+# Title: Página de Importação de Planejamento
+# Status: done
+# Dependencies: None
+# Priority: high
+# Description: Implementar página completa de importação de dados de planejamento financeiro
+# Details:
+Criar página com upload de arquivos XLS/CSV, preview dos dados, validação de layout, histórico de importações e sistema de logs. Incluir seletor de cliente, componentes de upload, preview, histórico e modal de processamento.
+
+# Test Strategy:
+Testar upload de arquivos, validação de dados, preview e histórico
+
+# Subtasks:
+## 1. Estrutura base da página implementada [done]
+### Dependencies: None
+### Description: Criar componente principal com Header, Sidebar e layout responsivo
+### Details:
+Implementar a estrutura básica da página com navegação e layout
+
+## 2. Componentes de upload e preview implementados [done]
+### Dependencies: None
+### Description: Criar FileUploadPanel e DataPreviewPanel com validação
+### Details:
+Implementar componentes para upload de arquivos XLS/CSV e preview dos dados com validação de layout
+
+## 3. Histórico e logs implementados [done]
+### Dependencies: None
+### Description: Criar ImportHistoryPanel e sistema de logs de importação
+### Details:
+Implementar painel de histórico com filtros, busca e sistema completo de logs de erros e sucessos
+
+## 4. Modal de processamento e resumo implementados [done]
+### Dependencies: None
+### Description: Criar ProcessingModal e ImportSummary com estatísticas
+### Details:
+Implementar modal de processamento com progresso em tempo real e componente de resumo com estatísticas de importação
+
+## 5. Integração no sistema implementada [done]
+### Dependencies: None
+### Description: Adicionar rota e integração no menu lateral
+### Details:
+Configurar rota /planned-import no sistema de rotas e adicionar item no menu lateral para acesso à página
+

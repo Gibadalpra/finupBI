@@ -1,0 +1,11 @@
+# Task ID: 5
+# Title: Módulo de Compras - Planejamento
+# Status: pending
+# Dependencies: 1
+# Priority: low
+# Description: Planejar e projetar a estrutura do módulo de compras
+# Details:
+Definir arquitetura, componentes, páginas e fluxos do módulo de compras. Incluir gestão de fornecedores, pedidos de compra e relatórios.
+
+# Test Strategy:
+Validação de requisitos com stakeholders
